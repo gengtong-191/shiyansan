@@ -36,6 +36,8 @@
 
 ##四.流程图
 
+![a](https://github.com/gengtong-191/shiyansan/blob/main/ab513938f851a04d8518cd47eeca475.png)
+
 ##五.核心代码
 
 这部分代码是学生选课后询问是否退课的代码，先用switch语句判断选了哪门课，打印出来，再用if判断句询问是否退课，再接着打印之后的选课结果。
