@@ -28,4 +28,69 @@
 
 ##三实验要求
 
+1.编写上述实体类以及测试主类（注意类之间继承关系的适用）
+
+2.在测试主类中，实例化多个类实体，模拟学生选课操作、打印课程信息（信息包括：编号、课程名称、上课地点、时间、授课教师 等）；模拟学生退课操作，再打印课程信息。
+
+3.编写实验报告。
+
+##四.流程图
+
+##五.核心代码
+
+这部分代码是学生选课后询问是否退课的代码，先用switch语句判断选了哪门课，打印出来，再用if判断句询问是否退课，再接着打印之后的选课结果。
+
+
+Scanner input1 = new Scanner(System.in);    //Scanner scanner = new Scanner(System.in);
+int i = input1.nextInt();    //使用next()接受用户输入
+```
+switch(i) {
+		 case 1:
+			 course = course1;
+			 break;
+		 case 2:
+			 course = course2;
+			 break;
+		 case 3:
+			 course = course3;
+			 break;
+		 default:
+			 System.out.println("课程编号不存在");
+		 }
+    Student m = new Student("2019310163", "耿彤", "女", course);
+		System.out.println(m);
+	  System.out.println("是否退课?是：1  否：2");
+		Scanner input2 = new Scanner(System.in); 
+		int n = input2.nextInt();
+		if(n==1) {
+			Student m2 = new Student("2019310163", "耿彤", "女", course);
+			System.out.println("退课成功" +"  "+m2+"\n"+"选课结束");
+		}
+		else {
+			System.out.println("选课结束");
+		}
+		input1.close();   //关闭同时释放内存
+		input2.close();
+```
+
+##六.实验过程
+
+1.确定Personnel为父类，Teacher和Student为子类， 用extends继承父类的属性和方法
+
+2.确定每个类所拥有的属性并依据属性类型定义为整型，字符型等
+
+3.用this关键字给每一个变量传递它们的值
+
+4.利用super函数调用父类的构造方法，实例化子类
+
+5.在父类Personnel和Courses类里利用toString来返回字符串本身
+
+6. 利用Scanner来获取用户的输入，switch判断学生选课，再用if语句判断是否退课
+
+7.打印
+
+##七.实验结果
+
+##八.实验感想
+
 
