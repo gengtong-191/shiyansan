@@ -91,6 +91,7 @@ switch(i) {
 
 ##七.实验结果
 
+![a](https://github.com/gengtong-191/shiyansan/blob/main/105edb2575a3f1d1fb3500ca112f499.png)
 ##八.实验感想
 
 
